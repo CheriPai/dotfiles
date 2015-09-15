@@ -1,0 +1,46 @@
+URxvt.font: xft:tamzen:size=13
+URxvt*cursorBlink: true
+URxvt*internalBorder: 12
+URxvt*matcher.button: 1
+URxvt*perl-ext-common: default,matcher,selection-to-clipboard
+URxvt*scrollBar: false
+URxvt*url-launcher: /usr/bin/firefox
+URxvt.perl-ext-common: tabbedex
+URxvt.tabbed.autohide: true
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 0
+URxvt*.transparent: true
+URxvt*.shading: 6
+
+URxvt*.background: [70]#0e0e0e
+URxvt*.foreground: #ffffff
+URxvt*.cursorColor: #2855a0
+
+! black
+URxvt*.color0: #002017
+URxvt*.color8: #0c807c
+! red
+URxvt*.color1: #1399a0
+URxvt*.color9: #2a8ac8
+! green
+URxvt*.color2: #2d4aa0
+URxvt*.color10: #0dc896
+! yellow
+URxvt*.color3: #2b51a0
+URxvt*.color11: #3862c8
+! blue
+URxvt*.color4: #06a084
+URxvt*.color12: #00c892
+! magenta
+URxvt*.color5: #03ac84
+URxvt*.color13: #0cc8ae
+! cyan
+URxvt*.color6: #2d4fa0
+URxvt*.color14: #1fabc8
+! white
+URxvt*.color7: #2855a0
+URxvt*.color15: #3b4dc8
+! underline when default
+URxvt*.colorUL: #2855a0
