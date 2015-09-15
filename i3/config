@@ -81,16 +81,16 @@ bindsym $mod+a focus parent
 # bindsym $mod+d focus child
 
 # Name the workspaces
-set $tag1 "I"
-set $tag2 "II"
-set $tag3 "III"
-set $tag4 "IV"
-set $tag5 "V"
-set $tag6 "VI"
-set $tag7 "VII"
-set $tag8 "VIII"
-set $tag9 "IX"
-set $tag0 "X"
+set $tag1 "一"
+set $tag2 "二"
+set $tag3 "三"
+set $tag4 "四"
+set $tag5 "五"
+set $tag6 "六"
+set $tag7 "七"
+set $tag8 "八"
+set $tag9 "九"
+set $tag0 "十"
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
@@ -155,7 +155,8 @@ bar {
     status_command i3blocks
     position top
     tray_output primary
-    font pango:Fira Mono Medium 10
+    # font pango:Fira Mono Medium 10
+    font pango: Tamzen 11
     separator_symbol " | "
     workspace_buttons yes
     strip_workspace_numbers yes
@@ -184,8 +185,8 @@ new_window pixel 4
 hide_edge_borders none
 
 # i3 gaps
+gaps inner 21
 gaps outer 34 
-
 
 
 # No border for some apps
@@ -205,6 +206,6 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec feh --no-xinerama --bg-center ~/Pictures/ghibli.png
+exec feh --no-xinerama --bg-center ~/Pictures/mountmaterial.png
 exec xrandr --output HDMI-0 --auto --output DP-1 --right-of HDMI-0
 exec xsetroot -cursor_name left_ptr
