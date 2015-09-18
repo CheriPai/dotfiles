@@ -17,6 +17,9 @@ bindsym $mod+backslash exec firefox-beta-bin
 # start notational velocity
 bindsym $mod+BackSpace exec nvpy
 
+# start calculator
+bindsym $mod+z exec gnome-calculator
+
 # sleep mode
 bindsym $mod+Pause exec systemctl suspend
 
