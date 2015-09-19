@@ -211,5 +211,5 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 # After log in
 exec feh --no-xinerama --bg-center ~/Pictures/mountmaterial.png
-exec xrandr --output HDMI-0 --auto --output DP-1 --right-of HDMI-0
+exec xrandr --auto --output HDMI-0 --mode 1920x1080 --output DP-1 --right-of HDMI-0
 exec xsetroot -cursor_name left_ptr
