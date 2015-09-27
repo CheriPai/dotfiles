@@ -199,6 +199,7 @@ gaps outer 34
 # No border for some apps
 for_window [class="^Firefox$"] border none
 for_window [class="^Thunderbird$"] border none
+for_window [class="^Chromium$"] border none
 set $browser = firefox
 popup_during_fullscreen     smart
 
