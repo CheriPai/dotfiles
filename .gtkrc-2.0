@@ -1,0 +1,19 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/Flattice/gtk-2.0/gtkrc"
+
+style "user-font" {
+	font_name = "Ubuntu 11"
+}
+
+widget_class "*" style "user-font"
+
+gtk-font-name="Ubuntu 11"
+gtk-icon-theme-name="UltraFlatIcons"
+
+include "/home/dat/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+style "vimfix" {
+  bg[NORMAL] = "#0c1014" # this matches my gvim theme 'Normal' bg color.
+}
+widget "vim-main-window.*GtkForm" style "vimfix"
