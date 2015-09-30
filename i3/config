@@ -205,7 +205,7 @@ popup_during_fullscreen     smart
 
 
 # new pastel colors
-set $fgcolor            #009688
+set $fgcolor            #3b5169 
 set $bgcolor            #202A2F
 
 client.focused              $fgcolor $fgcolor $bgcolor $fgcolor
