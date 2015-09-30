@@ -1,4 +1,5 @@
 URxvt.font: xft:tamzen:size=13
+URxvt*cursorUnderline: true
 URxvt*cursorBlink: true
 URxvt*internalBorder: 12
 URxvt*matcher.button: 1
@@ -44,3 +45,4 @@ URxvt*.color7: #2855a0
 URxvt*.color15: #3b4dc8
 ! underline when default
 URxvt*.colorUL: #2855a0
+
