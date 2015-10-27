@@ -15,6 +15,7 @@ synclient TouchpadOff=1
 xflux -z 90605 -k 4600 # turns on f.lux for screen coloring
 /opt/urserver/urserver --daemon&
 /usr/bin/start-pulseaudio-x11
+albert&
 compton -cG&
 urxvtd&
 exec i3
