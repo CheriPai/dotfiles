@@ -1,0 +1,4 @@
+colorscheme darkness
+noremap l gt
+noremap h gT
+hi StatusLine color: #ffffff; background: #202020; font-size: 13px;
