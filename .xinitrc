@@ -15,6 +15,7 @@ xset r rate 220 25 # kb rate
 xflux -z 90605 -k 4600 # turns on f.lux for screen coloring
 # /opt/urserver/urserver --daemon&
 # /usr/bin/start-pulseaudio-x11
+xbindkeys&
 albert&
 compton -cG&
 urxvtd&
