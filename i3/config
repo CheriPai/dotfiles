@@ -1,5 +1,10 @@
 # set mod key to alt
 set $mod Mod1
+set $LEFT_DISPLAY "HDMI-0"
+set $RIGHT_DISPLAY "DP-1"
+
+# set display variables
+
 
 #
 # wm indpendent hotkeys
@@ -120,12 +125,12 @@ bindsym $mod+Shift+9 move container to workspace $tag9
 bindsym $mod+Shift+0 move container to workspace $tag0
 
 # bind workspace to display
-workspace $tag1 output HDMI-0
-workspace $tag2 output HDMI-0
-workspace $tag3 output HDMI-0
-workspace $tag8 output DP-1
-workspace $tag9 output DP-1
-workspace $tag0 output DP-1
+workspace $tag1 output $LEFT_DISPLAY
+workspace $tag2 output $LEFT_DISPLAY
+workspace $tag3 output $LEFT_DISPLAY
+workspace $tag8 output $RIGHT_DISPLAY
+workspace $tag9 output $RIGHT_DISPLAY
+workspace $tag0 output $RIGHT_DISPLAY
 
 
 # assign applications to workspace
@@ -192,6 +197,7 @@ bar {
         set $background #000000
         set $foreground #ffffff
         set $darkgrey   #666666
+        set $red        #ff0000
         background $background
         statusline $foreground
         separator $darkgrey
@@ -217,8 +223,7 @@ gaps outer 21
 # No border for some apps
 for_window [class="^Firefox$"] border none
 for_window [class="^Thunderbird$"] border none
-for_window [class="^Chromium$"] border none
-for_window [class="^Eclipse$"] border none
+for_window [class="^chromium$"] border none
 set $browser = firefox
 popup_during_fullscreen     smart
 
@@ -234,6 +239,6 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 # After log in
 exec_always feh --no-xinerama --bg-center ~/Pictures/linux.png
-exec_always xrandr --output DP-0 --off --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
+exec_always xrandr --output DP-0 --off --output DP-3 --off --output DP-2 --off --output $RIGHT_DISPLAY --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output $LEFT_DISPLAY --mode 1920x1080 --pos 0x0 --rotate normal
 exec xsetroot -cursor_name left_ptr
 exec firefox
