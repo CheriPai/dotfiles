@@ -21,7 +21,7 @@ bindsym $mod+BackSpace exec nvpy
 bindsym $mod+z exec gnome-calculator
 
 # sleep mode
-bindsym $mod+Pause exec systemctl suspend
+bindsym $mod+Pause exec i3lock && systemctl suspend
 
 #
 # wm hotkeys
@@ -84,16 +84,16 @@ bindsym $mod+a focus parent
 # bindsym $mod+d focus child
 
 # Name the workspaces
-set $tag1 "一"
-set $tag2 "二"
-set $tag3 "三"
-set $tag4 "四"
-set $tag5 "五"
-set $tag6 "六"
-set $tag7 "七"
-set $tag8 "八"
-set $tag9 "九"
-set $tag0 "十"
+set $tag1 "1:"
+set $tag2 "2:"
+set $tag3 "3: "
+set $tag4 "4:"
+set $tag5 "5:"
+set $tag6 "6:"
+set $tag7 "7:"
+set $tag8 "8:"
+set $tag9 "9:"
+set $tag0 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
@@ -118,6 +118,15 @@ bindsym $mod+Shift+7 move container to workspace $tag7
 bindsym $mod+Shift+8 move container to workspace $tag8
 bindsym $mod+Shift+9 move container to workspace $tag9
 bindsym $mod+Shift+0 move container to workspace $tag0
+
+
+assign [class="Firefox"] $tag1
+assign [class="URxvt"] $tag2
+assign [class="Eclipse"] $tag3
+assign [class="QtCreator"] $tag3
+assign [class="Zathura"] $tag4
+assign [class="Rhythmbox"] $tag0
+
 
 # cycle through workspaces
 bindsym $mod+bracketleft workspace prev
@@ -215,6 +224,7 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec feh --no-xinerama --bg-center ~/Pictures/linux.png
-exec xrandr --auto --output HDMI-0 --mode 1920x1080 --output DP-1 --right-of HDMI-0
+exec_always feh --no-xinerama --bg-center ~/Pictures/linux.png
+exec_always xrandr --output DP-0 --off --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
 exec xsetroot -cursor_name left_ptr
+exec firefox
