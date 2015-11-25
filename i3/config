@@ -14,7 +14,7 @@ set $RIGHT_DISPLAY "DP-1"
 bindsym $mod+Return exec urxvtc
 
 # start rofi
-# bindsym $mod+space exec rofi -show run -terminal urxvt -font 'tamzen 13' -lines 4 -eh 2 -width 100 -padding 700 -opacity 95 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896"
+bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100 -padding 475 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896" -opacity 95
 
 # start firefox
 bindsym $mod+backslash exec firefox
@@ -26,7 +26,7 @@ bindsym $mod+BackSpace exec nvpy
 bindsym $mod+z exec gnome-calculator
 
 # sleep mode
-bindsym $mod+Pause exec i3lock && systemctl suspend
+bindsym $mod+Pause exec ~/.config/dotfiles/i3/lock.sh ~/.config/dotfiles/img/screen-lock.png & systemctl suspend
 
 #
 # wm hotkeys
