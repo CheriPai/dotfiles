@@ -14,7 +14,7 @@ alias serve='ruby -run -e httpd . -p 1234'
 alias v='vim'
 alias gv='gvim'
 alias rm='rm'
-alias octave='octave --no-gui'
+alias octave='cd ~/Octave && octave --no-gui'
 
 export WORKON_HOME=~/.Envs
 source /usr/bin/virtualenvwrapper.sh
