@@ -134,12 +134,19 @@ workspace $tag0 output $RIGHT_DISPLAY
 
 
 # assign applications to workspace
+# focus application after being launched
 assign [class="Firefox"] $tag1
+for_window [class="Firefox"] focus
 assign [class="URxvt"] $tag8
+for_window [class="URxvt"] focus
 assign [class="Eclipse"] $tag9
+for_window [class="Eclipse"] focus
 assign [class="QtCreator"] $tag9
+for_window [class="QtCreator"] focus
 assign [class="Zathura"] $tag2
+for_window [class="Zathura"] focus
 assign [class="Rhythmbox"] $tag3
+for_window [class="Rhythmbox"] focus
 
 
 # cycle through workspaces
