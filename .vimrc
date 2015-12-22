@@ -37,7 +37,6 @@ execute pathogen#infect()
 
 
 "Unite settings
-nnoremap <Leader>f :Unite -start-insert -auto-resize file/async<CR>
 nnoremap <Leader>t :Unite -start-insert -auto-resize file_rec/async<CR>
 nnoremap <Leader>e :Unite -auto-resize buffer<CR>
 nnoremap <Leader>/ :Unite -auto-resize grep:.<CR>
@@ -75,6 +74,13 @@ autocmd FileType javascript set commentstring=//\ %s
 autocmd FileType css set commentstring=/*\ %s\ */
 autocmd FileType vim set commentstring=\"\ %s
 autocmd FileType html set commentstring=<!--\ %s\ -->
+
+
+"easymotion settings
+let g:EasyMotion_smartcase = 1
+nmap <Leader>f <Plug>(easymotion-s)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 
 " Only show quick-scope highlights after f/F/t/T is pressed
