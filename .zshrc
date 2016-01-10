@@ -6,16 +6,21 @@ fi
 
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 
-# Imported from .bashrc
 alias .='ls'
 alias ..='cd ..'
-
 alias serve='ruby -run -e httpd . -p 1234'
 alias v='vim'
 alias gv='gvim'
 alias rm='rm'
 alias octave='octave --no-gui'
 
+# Bind default application
+alias -s pdf='zathura'
+alias -s {txt,py,c,cpp,h,java,css,js,md,m}='gvim'
+alias -s {jpg,png}='feh'
+alias -s {mp3,wav,m4a}='mplayer'
+
+# For python virtualenv
 export WORKON_HOME=~/.Envs
 source /usr/bin/virtualenvwrapper.sh
 
