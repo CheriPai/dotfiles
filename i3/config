@@ -249,3 +249,4 @@ exec_always feh --no-xinerama --bg-center ~/Pictures/shinobu1.png
 exec_always xrandr --output DP-0 --off --output DP-3 --off --output DP-2 --off --output $RIGHT_DISPLAY --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output $LEFT_DISPLAY --mode 1920x1080 --pos 0x0 --rotate normal
 exec xsetroot -cursor_name left_ptr
 exec firefox
+exec ~/.config/dotfiles/i3/lock.sh ~/.config/dotfiles/img/screen-lock.png
