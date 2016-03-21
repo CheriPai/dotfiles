@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # X settings
-xset s off # disable screen saver blanking
+setterm -blank 0 -powerdown 0
 xset +fp /usr/share/fonts/local
 xset fp rehash
 setxkbmap -option ctrl:nocaps # makes caps lock ctrl
@@ -10,6 +10,8 @@ xset m 1 4
 
 # Disable touchpad
 synclient TouchpadOff=1
+
+xrdb ~/.Xresources
 
 # Start software
 xflux -z 90605 -k 3800 # turns on f.lux for screen coloring

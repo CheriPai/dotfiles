@@ -2,6 +2,7 @@
 set $mod Mod1
 set $LEFT_DISPLAY "HDMI-0"
 set $RIGHT_DISPLAY "DP-1"
+set $TOP_DISPLAY "DP-0"
 
 # set display variables
 
@@ -14,7 +15,7 @@ set $RIGHT_DISPLAY "DP-1"
 bindsym $mod+Return exec urxvtc
 
 # start rofi
-bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100 -padding 475 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896" -opacity 95
+bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100  -padding 453 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896" -opacity 95
 
 # start firefox
 bindsym $mod+backslash exec firefox
@@ -93,8 +94,8 @@ set $tag1 "1:"
 set $tag2 "2:"
 set $tag3 "3: "
 set $tag4 "4:"
-set $tag5 "5:"
-set $tag6 "6:"
+set $tag5 "5:"
+set $tag6 "6:"
 set $tag7 "7:"
 set $tag8 "8:"
 set $tag9 "9:"
@@ -128,6 +129,8 @@ bindsym $mod+Shift+0 move container to workspace $tag0
 workspace $tag1 output $LEFT_DISPLAY
 workspace $tag2 output $LEFT_DISPLAY
 workspace $tag3 output $LEFT_DISPLAY
+workspace $tag5 output $TOP_DISPLAY
+workspace $tag6 output $TOP_DISPLAY
 workspace $tag8 output $RIGHT_DISPLAY
 workspace $tag9 output $RIGHT_DISPLAY
 workspace $tag0 output $RIGHT_DISPLAY
@@ -245,8 +248,8 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec_always feh --no-xinerama --bg-center ~/Pictures/shinobu1.png
-exec_always xrandr --output DP-0 --off --output DP-3 --off --output DP-2 --off --output $RIGHT_DISPLAY --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output $LEFT_DISPLAY --mode 1920x1080 --pos 0x0 --rotate normal
+exec_always feh --no-xinerama --bg-center ~/Pictures/shinobu1_large.png
+exec_always xrandr --output DP-0 --mode 1920x1080 --pos 944x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1920x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x1080 --rotate normal
 exec xsetroot -cursor_name left_ptr
 exec firefox
 exec ~/.config/dotfiles/i3/lock.sh ~/.config/dotfiles/img/screen-lock.png
