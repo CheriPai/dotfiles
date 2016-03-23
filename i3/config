@@ -94,7 +94,7 @@ set $tag1 "1:"
 set $tag2 "2:"
 set $tag3 "3: "
 set $tag4 "4:"
-set $tag5 "5:"
+set $tag5 "5: "
 set $tag6 "6:"
 set $tag7 "7:"
 set $tag8 "8:"
@@ -140,8 +140,8 @@ workspace $tag0 output $RIGHT_DISPLAY
 # focus application after being launched
 assign [class="Firefox"] $tag1
 for_window [class="Firefox"] focus
-assign [class="URxvt"] $tag8
-for_window [class="URxvt"] focus
+# assign [class="URxvt"] $tag8
+# for_window [class="URxvt"] focus
 assign [class="Eclipse"] $tag9
 for_window [class="Eclipse"] focus
 assign [class="QtCreator"] $tag9
@@ -252,4 +252,5 @@ exec_always feh --no-xinerama --bg-center ~/Pictures/shinobu1_large.png
 exec_always xrandr --output DP-0 --mode 1920x1080 --pos 944x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1920x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x1080 --rotate normal
 exec xsetroot -cursor_name left_ptr
 exec firefox
+exec --no-startup-id i3-msg 'workspace $tag5; exec urxvtc -e glances; workspace $tag1'
 exec ~/.config/dotfiles/i3/lock.sh ~/.config/dotfiles/img/screen-lock.png
