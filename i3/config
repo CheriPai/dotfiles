@@ -150,6 +150,8 @@ assign [class="Zathura"] $tag2
 for_window [class="Zathura"] focus
 assign [class="Rhythmbox"] $tag3
 for_window [class="Rhythmbox"] focus
+assign [class="Mendeleydesktop.x86_64"] $tag2
+for_window [class="Mendeleydesktop.x86_64"] focus
 
 
 # cycle through workspaces
