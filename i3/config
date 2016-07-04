@@ -10,7 +10,7 @@ set $mod Mod1
 bindsym $mod+Return exec urxvtc
 
 # start rofi
-bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100 -padding 475 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896" -opacity 95
+bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100 -padding 400 -bw 0 -bc "#0e0e0e" -bg "#0e0e0e" -fg "#2855a0" -hlbg "#0e0e0e" -hlfg "#0dc896" -opacity 95
 
 # start firefox
 bindsym $mod+backslash exec firefox
@@ -179,7 +179,7 @@ bar {
     position top
     tray_output primary
     # font pango:Fira Mono Medium 10
-    font pango: Tamzen 11
+    font pango: Tamzen, fontawesome, 11
     separator_symbol " | "
     workspace_buttons yes
     strip_workspace_numbers yes
@@ -231,6 +231,6 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec_always feh --no-xinerama --bg-center ~/Pictures/mountmaterial16x9.png
+exec_always feh --no-xinerama --bg-center ~/Pictures/lake.png
 exec xsetroot -cursor_name left_ptr
 exec firefox

@@ -12,7 +12,7 @@ xset r rate 220 25 # kb rate
 # synclient TouchpadOff=1
 
 # Start software
-xflux -z 90605 -k 4600 # turns on f.lux for screen coloring
+xflux -z 90605 -k 4000 # turns on f.lux for screen coloring
 # /opt/urserver/urserver --daemon&
 # /usr/bin/start-pulseaudio-x11
 xbindkeys&
