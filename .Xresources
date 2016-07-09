@@ -1,0 +1,47 @@
+Xcursor.theme: cursor-theme
+Xcursor.size: 16
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+! Color scheme for urgent row
+rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+! Color scheme for active row
+rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+! Color scheme window
+rofi.color-window:                   #ffffff,#f5f5f5
+! Separator style (none, dash, solid)
+rofi.separator-style:                solid
+
+
+*.foreground:   #98d1ce
+*.background:   #0a0f14
+*.cursorColor:  #98d1ce
+
+*.color0:       #0a0f14
+*.color8:       #10151b
+
+*.color1:       #c33027
+*.color9:       #d26939
+
+*.color2:       #26a98b
+*.color10:      #081f2d
+
+*.color3:       #edb54b
+*.color11:      #245361
+
+*.color4:       #195465
+*.color12:      #093748
+
+*.color5:       #4e5165
+*.color13:      #888ba5
+
+*.color6:       #33859d
+*.color14:      #599caa
+
+*.color7:       #98d1ce
+*.color15:      #d3ebe9
