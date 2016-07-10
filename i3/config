@@ -1,10 +1,28 @@
 # set mod key to super
 set $mod Mod4
+
+# set display variables
 set $LEFT_DISPLAY "HDMI-0"
 set $RIGHT_DISPLAY "DP-1"
 set $TOP_DISPLAY "DP-0"
 
-# set display variables
+# set colors from .Xresources
+set_from_resource $darkred     color1
+set_from_resource $red         color9
+set_from_resource $darkgreen   color2
+set_from_resource $green       color10
+set_from_resource $darkyellow  color3
+set_from_resource $yellow      color11
+set_from_resource $darkblue    color4
+set_from_resource $blue        color12
+set_from_resource $darkmagenta color5
+set_from_resource $magenta     color13
+set_from_resource $darkcyan    color6
+set_from_resource $cyan        color14
+set_from_resource $darkwhite   color7
+set_from_resource $white       color15
+set_from_resource $background  background
+set $foreground #ffffff
 
 
 #
@@ -194,7 +212,6 @@ bar {
     status_command i3blocks
     position top
     tray_output primary
-    # font pango:Fira Mono Medium 10
     font pango: Tamzen, fontawesome, ionicons, 11
     separator_symbol " "
     workspace_buttons yes
@@ -203,10 +220,7 @@ bar {
     height 30
 
     colors {
-        set $background #0a0a0a
-        set $foreground #ffffff
         set $darkgrey   #aaaaaa
-        set $red        #ff0000
         background $background
         statusline $foreground
         separator $darkgrey
@@ -219,7 +233,7 @@ bar {
 }
 
 # windows without borders
-new_window pixel 4
+new_window pixel 0
 
 # hiding borders
 hide_edge_borders none
