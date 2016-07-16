@@ -2,8 +2,7 @@
 set $mod Mod4
 
 # set display variables
-set $LEFT_DISPLAY "HDMI-0"
-set $RIGHT_DISPLAY "DP-1"
+set $MAIN_DISPLAY "HDMI-0"
 set $TOP_DISPLAY "DP-0"
 
 # set colors from .Xresources
@@ -33,7 +32,7 @@ set $foreground #ffffff
 bindsym $mod+Return exec urxvtc
 
 # start rofi
-bindsym $mod+space exec rofi -show run -lines 4 -eh 2 -font 'tamzen 13' -width 100  -padding 453 -opacity 98
+bindsym $mod+space exec rofi -show run -lines 10 -eh 2 -font 'tamzen 13' -width 40  -opacity 100 -hide-scrollbar
 
 # start firefox
 bindsym $mod+BackSpace exec firefox-beta-bin
@@ -106,15 +105,15 @@ bindsym $mod+a focus parent
 
 # Name the workspaces
 set $tag1 "1:"
-set $tag2 "2:"
-set $tag3 "3: "
-set $tag4 "4:"
-set $tag5 "5: "
-set $tag6 "6:"
+set $tag2 "2:"
+set $tag3 "3:"
+set $tag4 "4:"
+set $tag5 "5: "
+set $tag6 "6:"
 set $tag7 "7:"
-set $tag8 "8:"
-set $tag9 "9:"
-set $tag0 "10:"
+set $tag8 "8:"
+set $tag9 "9: "
+set $tag0 "0:"
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
@@ -141,14 +140,11 @@ bindsym $mod+Shift+9 move container to workspace $tag9
 bindsym $mod+Shift+0 move container to workspace $tag0
 
 # bind workspace to display
-workspace $tag1 output $LEFT_DISPLAY
-workspace $tag2 output $LEFT_DISPLAY
-workspace $tag3 output $LEFT_DISPLAY
-workspace $tag5 output $TOP_DISPLAY
-workspace $tag6 output $TOP_DISPLAY
-workspace $tag8 output $RIGHT_DISPLAY
-workspace $tag9 output $RIGHT_DISPLAY
-workspace $tag0 output $RIGHT_DISPLAY
+workspace $tag1 output $MAIN_DISPLAY
+workspace $tag2 output $MAIN_DISPLAY
+workspace $tag3 output $MAIN_DISPLAY
+workspace $tag9 output $TOP_DISPLAY
+workspace $tag0 output $TOP_DISPLAY
 
 
 # assign applications to workspace
@@ -212,12 +208,12 @@ bar {
     status_command i3blocks
     position top
     tray_output primary
-    font pango: Tamzen, fontawesome, ionicons, 11
+    font pango: Tamzen, fontawesome, ionicons, 13
     separator_symbol " "
     workspace_buttons yes
     strip_workspace_numbers yes
     binding_mode_indicator yes
-    height 30
+    height 36
 
     colors {
         set $darkgrey   #aaaaaa
@@ -261,8 +257,8 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki1_large.png
-exec_always xrandr --output DP-0 --mode 1920x1080 --pos 944x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1920x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x1080 --rotate normal
+exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki21x9.png
+exec_always xrandr --output DP-0 --mode 1920x1080 --pos 728x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output HDMI-0 --primary --mode 3440x1440 --pos 0x1080 --rotate normal
 exec xsetroot -cursor_name left_ptr
 exec firefox-beta-bin
 exec redshift
