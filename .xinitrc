@@ -7,6 +7,7 @@ xset fp rehash
 setxkbmap -option ctrl:nocaps # makes caps lock ctrl
 xset r rate 220 25 # kb rate
 xset m 1 4 
+xset s off -dpms
 
 # Disable touchpad
 synclient TouchpadOff=1
@@ -14,7 +15,6 @@ synclient TouchpadOff=1
 xrdb ~/.Xresources
 
 # Start software
-xflux -z 90605 -k 3800 # turns on f.lux for screen coloring
 /opt/urserver/urserver --daemon&
 /usr/bin/start-pulseaudio-x11
 compton -cfG&
