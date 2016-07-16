@@ -153,15 +153,17 @@ assign [class="Firefox"] $tag1
 for_window [class="Firefox"] focus
 # assign [class="URxvt"] $tag8
 # for_window [class="URxvt"] focus
-assign [class="Eclipse"] $tag9
+assign [class="Eclipse"] $tag3
 for_window [class="Eclipse"] focus
-assign [class="QtCreator"] $tag9
+assign [class="QtCreator"] $tag3
 for_window [class="QtCreator"] focus
-assign [class="Zathura"] $tag2
+assign [class="Zathura"] $tag4
 for_window [class="Zathura"] focus
-assign [class="Rhythmbox"] $tag3
+assign [class="llpp"] $tag4
+for_window [class="llpp"] focus
+assign [class="Rhythmbox"] $tag5
 for_window [class="Rhythmbox"] focus
-assign [class="Mendeleydesktop.x86_64"] $tag2
+assign [class="Mendeleydesktop.x86_64"] $tag4
 for_window [class="Mendeleydesktop.x86_64"] focus
 
 
@@ -208,7 +210,7 @@ bar {
     status_command i3blocks
     position top
     tray_output primary
-    font pango: Tamzen, fontawesome, ionicons, 13
+    font pango: Tamzen, fontawesome, ionicons, 9
     separator_symbol " "
     workspace_buttons yes
     strip_workspace_numbers yes
@@ -243,6 +245,8 @@ gaps outer 16
 for_window [class="^Firefox$"] border none
 for_window [class="^Thunderbird$"] border none
 for_window [class="^chromium$"] border none
+for_window [class="^Mendeleydesktop.x86_64$"] border none
+for_window [class="^mendeleydesktop.x86_64$"] border none
 set $browser = firefox-beta-bin
 popup_during_fullscreen     smart
 

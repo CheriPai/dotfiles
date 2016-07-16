@@ -1,4 +1,4 @@
-URxvt.font: xft:tamzen:size=13
+URxvt.font: xft:tamsyn:size=13
 URxvt*cursorUnderline: true
 URxvt*cursorBlink: true
 URxvt*internalBorder: 12
