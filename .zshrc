@@ -49,3 +49,9 @@ magic-enter () {
 }
 zle -N magic-enter
 bindkey "^M" magic-enter
+
+
+cnt() {
+    ls -1 $1 | wc -l
+}
+autoload -Uz cnt
