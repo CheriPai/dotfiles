@@ -37,7 +37,7 @@ bindsym $mod+BackSpace exec firefox-beta-bin
 bindsym $mod+z exec gnome-calculator
 
 # sleep mode
-bindsym $mod+grave exec dm-tool lock & systemctl suspend
+bindsym $mod+grave exec dm-tool lock && systemctl suspend
 
 #
 # wm hotkeys
@@ -249,6 +249,7 @@ for_window [class="^Thunderbird$"] border none
 for_window [class="^chromium$"] border none
 for_window [class="^Mendeleydesktop.x86_64$"] border none
 for_window [class="^mendeleydesktop.x86_64$"] border none
+for_window [class="feh"] floating enable
 set $browser = firefox-beta-bin
 popup_during_fullscreen     smart
 
@@ -273,4 +274,5 @@ exec urxvtd
 exec /usr/bin/start-pulseaudio-x11
 exec compton -cfG
 exec firefox-beta-bin
+
 exec redshift
