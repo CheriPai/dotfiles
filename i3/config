@@ -37,7 +37,7 @@ bindsym $mod+BackSpace exec firefox-beta-bin
 bindsym $mod+z exec gnome-calculator
 
 # sleep mode
-bindsym $mod+grave exec dm-tool lock && systemctl suspend
+bindsym $mod+grave exec systemctl suspend
 
 #
 # wm hotkeys
