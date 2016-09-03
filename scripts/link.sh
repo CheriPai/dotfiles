@@ -8,5 +8,4 @@ ln -s $HOME/.config/dotfiles/.vimperatorrc $HOME/.vimperatorrc
 ln -s $HOME/.config/dotfiles/.vimrc $HOME/.vimrc
 ln -s $HOME/.config/dotfiles/.Xdefaults $HOME/.Xdefaults
 ln -s $HOME/.config/dotfiles/.Xresources $HOME/.Xresources
-ln -s $HOME/.config/dotfiles/.xprofile $HOME/.xprofile
 ln -s $HOME/.config/dotfiles/.zshrc $HOME/.zshrc
