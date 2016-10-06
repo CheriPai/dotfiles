@@ -154,17 +154,17 @@ assign [class="Firefox"] $tag1
 for_window [class="Firefox"] focus
 # assign [class="URxvt"] $tag8
 # for_window [class="URxvt"] focus
-assign [class="Eclipse"] $tag3
+assign [class="Eclipse"] $tag2
 for_window [class="Eclipse"] focus
-assign [class="QtCreator"] $tag3
+assign [class="QtCreator"] $tag2
 for_window [class="QtCreator"] focus
-assign [class="Zathura"] $tag4
+assign [class="Zathura"] $tag3
 for_window [class="Zathura"] focus
-assign [class="llpp"] $tag4
+assign [class="llpp"] $tag3
 for_window [class="llpp"] focus
 assign [class="Rhythmbox"] $tag5
 for_window [class="Rhythmbox"] focus
-assign [class="Mendeleydesktop.x86_64"] $tag4
+assign [class="Mendeleydesktop.x86_64"] $tag3
 for_window [class="Mendeleydesktop.x86_64"] focus
 
 
