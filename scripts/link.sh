@@ -1,5 +1,6 @@
 ln -s $HOME/.config/dotfiles/i3/config $HOME/.config/i3/config
 ln -s $HOME/.config/dotfiles/compton.conf $HOME/.config/compton.conf
+ln -s $HOME/.config/dotfiles/gtk.css $HOME/.config/gtk-3.0/gtk.css
 ln -s $HOME/.config/dotfiles/.gtkrc-2.0 $HOME/.gtkrc-2.0
 ln -s $HOME/.config/dotfiles/.gtkrc-2.0.mine $HOME/.gtkrc-2.0.mine
 ln -s $HOME/.config/dotfiles/.i3blocks.conf $HOME/.i3blocks.conf
