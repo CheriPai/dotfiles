@@ -13,6 +13,7 @@ alias v='vim'
 alias gv='gvim'
 alias rm='rm'
 alias octave='octave --no-gui'
+alias firefox='firefox-beta-bin'
 
 # Bind default application
 alias -s pdf='zathura'

@@ -279,5 +279,5 @@ exec urxvtd
 exec /usr/bin/start-pulseaudio-x11
 exec compton -cfG
 exec nvidia-settings --assign GPULogoBrightness=0
-exec firefox-beta-bin
 exec redshift
+exec firefox-beta-bin
