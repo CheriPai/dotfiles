@@ -56,8 +56,3 @@ cnt() {
     ls -1 $1 | wc -l
 }
 autoload -Uz cnt
-
-
-# Load cuda for tensorflow
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
-export CUDA_HOME=/usr/local/cuda
