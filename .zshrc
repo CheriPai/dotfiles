@@ -25,6 +25,11 @@ alias -s {mp3,wav,m4a}='mplayer'
 export WORKON_HOME=~/.Envs
 source /usr/bin/virtualenvwrapper.sh
 
+# For tensorflow
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64:/opt/cuda/extras/CUPTI/lib64"
+export CUDA_HOME=/opt/cuda
+
+
 # Ignores duplicate commands in history
 setopt HIST_IGNORE_DUPS
 
