@@ -269,15 +269,15 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 # After log in
 exec xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x1080 --rotate normal --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 728x0 --rotate normal --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
-exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki21x9.png
+exec xrandr --dpi 128
+exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki.png
 exec xsetroot -cursor_name left_ptr
 exec xset r rate 220 25
 exec xset m 1 4
 exec xset s off -dpms
-exec xrandr --dpi 128
 exec urxvtd
 exec /usr/bin/start-pulseaudio-x11
 exec compton -cfG
 exec nvidia-settings --assign GPULogoBrightness=0
 exec redshift
-exec firefox-beta-bin
+exec firefox
