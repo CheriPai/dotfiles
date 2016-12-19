@@ -3,7 +3,6 @@ set $mod Mod4
 
 # set display variables
 set $MAIN_DISPLAY "DP-0.8"
-set $TOP_DISPLAY "HDMI-0"
 
 # set colors from .Xresources
 set_from_resource $darkred     color1
@@ -148,8 +147,6 @@ workspace $tag5 output $MAIN_DISPLAY
 workspace $tag6 output $MAIN_DISPLAY
 workspace $tag7 output $MAIN_DISPLAY
 workspace $tag8 output $MAIN_DISPLAY
-workspace $tag9 output $TOP_DISPLAY
-workspace $tag0 output $TOP_DISPLAY
 
 
 # assign applications to workspace
@@ -268,7 +265,7 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x1080 --rotate normal --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 728x0 --rotate normal --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
+exec xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off --output HDMI-0 --off --output--output DP-1 --off --output DP-0 --off
 exec xrandr --dpi 128
 exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki.png
 exec xsetroot -cursor_name left_ptr
