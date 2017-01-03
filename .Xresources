@@ -1,5 +1,6 @@
 Xcursor.theme: cursor-theme
 Xcursor.size: 16
+Xft.dpi: 128
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
