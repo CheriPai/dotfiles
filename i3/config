@@ -34,7 +34,7 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+space exec rofi -show run -lines 10 -eh 2 -font 'tamzen 13' -width 40  -opacity 100 -hide-scrollbar
 
 # start firefox
-bindsym $mod+BackSpace exec firefox-beta-bin
+bindsym $mod+BackSpace exec firefox
 
 # start calculator
 bindsym $mod+z exec gnome-calculator
@@ -251,7 +251,7 @@ for_window [class="^chromium$"] border none
 for_window [class="^Mendeleydesktop.x86_64$"] border none
 for_window [class="^mendeleydesktop.x86_64$"] border none
 for_window [class="feh"] floating enable
-set $browser = firefox-beta-bin
+set $browser = firefox
 popup_during_fullscreen     smart
 
 
