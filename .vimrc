@@ -55,7 +55,7 @@ set undolevels=64
 
 
 "gvim options
-set guifont=Tamzen\ 13
+set guifont=Tamzen\ 10
 colorscheme gotham256
 :set guioptions-=T "removes toolbar
 :set guioptions-=r "removes right-hand scrollbar

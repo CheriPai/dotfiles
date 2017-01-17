@@ -212,7 +212,7 @@ bar {
     status_command i3blocks
     position top
     tray_output primary
-    font pango: Tamzen, fontawesome, ionicons, 12
+    font pango: Tamzen, fontawesome, ionicons, 10
     separator_symbol " "
     workspace_buttons yes
     strip_workspace_numbers yes
@@ -270,7 +270,6 @@ exec xrandr --dpi 128
 exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki.png
 exec xsetroot -cursor_name left_ptr
 exec xset r rate 220 25
-exec xset m 1 4
 exec xset s off -dpms
 exec urxvtd
 exec /usr/bin/start-pulseaudio-x11
