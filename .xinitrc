@@ -6,7 +6,6 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 setxkbmap -option ctrl:nocaps # makes caps lock ctrl
 xset r rate 220 25 # kb rate
-xset m 1 4 
 xset s off -dpms
 
 # Disable touchpad
