@@ -151,10 +151,6 @@ workspace $tag8 output $MAIN_DISPLAY
 
 # assign applications to workspace
 # focus application after being launched
-assign [class="Firefox"] $tag1
-for_window [class="Firefox"] focus
-# assign [class="URxvt"] $tag8
-# for_window [class="URxvt"] focus
 assign [class="Eclipse"] $tag2
 for_window [class="Eclipse"] focus
 assign [class="QtCreator"] $tag2
