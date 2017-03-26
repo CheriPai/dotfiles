@@ -202,32 +202,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-    status_command i3blocks
-    position top
-    tray_output primary
-    font pango: Tamzen, fontawesome, ionicons, 10
-    separator_symbol " "
-    workspace_buttons yes
-    strip_workspace_numbers yes
-    binding_mode_indicator yes
-    height 36
-
-    colors {
-        set $darkgrey   #aaaaaa
-        background $background
-        statusline $foreground
-        separator $darkgrey
-
-        focused_workspace  $background $background $foreground
-        active_workspace   $background $background $foreground
-        inactive_workspace $background $background $darkgrey
-        urgent_workspace   $background $background $red
-    }
-}
-
 # windows without borders
 new_window pixel 0
 
@@ -263,12 +237,13 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 # After log in
 exec xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off --output HDMI-0 --off --output--output DP-1 --off --output DP-0 --off
 exec xrandr --dpi 128
-exec_always feh --no-xinerama --bg-center ~/Pictures/kirisaki.png
+exec_always feh --no-xinerama --bg-center ~/Pictures/nui_harime___kill_la_kill_by_gra0007-dazynib.png
 exec xsetroot -cursor_name left_ptr
 exec xset r rate 220 25
 exec xset s off -dpms
-exec urxvtd
 exec /usr/bin/start-pulseaudio-x11
+exec polybar top
+exec urxvtd
 exec compton -cfG
 exec nvidia-settings --assign GPULogoBrightness=0
 exec redshift
