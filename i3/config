@@ -235,8 +235,8 @@ client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
 
 
 # After log in
-exec xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off --output HDMI-0 --off --output--output DP-1 --off --output DP-0 --off
-exec xrandr --dpi 128
+exec_always xrandr --output DP-0.8 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off --output HDMI-0 --output DP-2 --off --output DP-1 --off --output DP-0 --off
+exec_always xrandr --dpi 128
 exec_always feh --no-xinerama --bg-center ~/Pictures/nui_harime___kill_la_kill_by_gra0007-dazynib.png
 exec xsetroot -cursor_name left_ptr
 exec xset r rate 220 25
