@@ -9,7 +9,7 @@ set wildmenu
 syntax enable
 
 "Sets clipboard as shared between X session and Vim
-set clipboard^=unnamed
+set clipboard=unnamedplus
 
 
 "Key maps
