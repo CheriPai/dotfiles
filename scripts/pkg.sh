@@ -1,7 +1,7 @@
 #!/bin/bash
 pac=$(checkupdates | wc -l)
 
-check=$((pac + aur))
+check=$((pac))
 if [[ "$check" != "0" ]]
 then
     echo "$pac"
