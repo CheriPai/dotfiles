@@ -1,6 +1,5 @@
 Xcursor.theme: cursor-theme
 Xcursor.size: 16
-Xft.dpi: 128
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
@@ -17,7 +16,6 @@ rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
 rofi.color-window:                   #ffffff,#f5f5f5
 ! Separator style (none, dash, solid)
 rofi.separator-style:                solid
-
 
 *.foreground:   #98d1ce
 *.background:   #0a0f14
