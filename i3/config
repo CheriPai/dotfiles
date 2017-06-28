@@ -219,6 +219,8 @@ for_window [class="^chromium$"] border none
 for_window [class="^Mendeleydesktop.x86_64$"] border none
 for_window [class="^mendeleydesktop.x86_64$"] border none
 for_window [class="feh"] floating enable
+for_window [class="image"] floating enable
+for_window [class="Image"] floating enable
 set $browser = firefox
 popup_during_fullscreen     smart
 
