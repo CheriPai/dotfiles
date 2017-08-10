@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # set display variables
-set $MAIN_DISPLAY "DP-0.8"
+set $MAIN_DISPLAY "DP-4.8"
 
 # set colors from .Xresources
 set_from_resource $darkred     color1
