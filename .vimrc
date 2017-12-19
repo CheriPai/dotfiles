@@ -37,7 +37,8 @@ execute pathogen#infect()
 
 
 "Unite settings
-nnoremap <Leader>t :Unite -start-insert -auto-resize file_rec/async<CR>
+nnoremap <Leader>t :Unite -start-insert -auto-resize file_rec<CR>
+nnoremap <Leader>c :Unite -auto-resize file<CR>
 nnoremap <Leader>e :Unite -auto-resize buffer<CR>
 nnoremap <Leader>/ :Unite -auto-resize grep:.<CR>
 let g:unite_source_history_yank_enable = 1
