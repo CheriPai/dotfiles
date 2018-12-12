@@ -12,16 +12,6 @@ syntax enable
 set clipboard=unnamedplus
 
 
-"Key maps
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 :command WQ wq
 :command Wq wq
 :command W w
@@ -56,7 +46,8 @@ set undolevels=64
 
 
 "gvim options
-set guifont=Tamzen\ 12
+"set guifont=Droid\ Sans\ Mono\ 12
+set guifont=Droid\ Sans\ Mono\ 10
 colorscheme gotham256
 :set guioptions-=T "removes toolbar
 :set guioptions-=r "removes right-hand scrollbar
@@ -64,6 +55,9 @@ colorscheme gotham256
 :set guiheadroom=0
 :set expandtab
 
+" Use an undo file
+set undofile
+set undodir=/home/dat/.vim/tmp
 
 "setups up comment type per filetype for commentary
 autocmd FileType python set commentstring=#\ %s
